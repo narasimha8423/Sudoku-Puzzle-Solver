@@ -8,9 +8,9 @@ class SudokuPuzzle:
     def isvalid(self,board,k,row,col):
         """
         return if the number fit in the position
-        param board: 2d list of ints
+        param board: 2d list of strings
         param position: (row, col)
-        param number: integer
+        param k: string
         rturn: boolean
         """
         for r in range(9):
@@ -31,7 +31,7 @@ class SudokuPuzzle:
     def solve(self,board):
         """
     		solve a sudoku board using backtracking
-    		param board: 2d list of integers
+    		param board: 2d list of strings
     		return: solution
     		"""
         for i in range(9):
@@ -49,7 +49,7 @@ class SudokuPuzzle:
     def print_board(self,board):
         """
         prints the board
-        param board: 2d List of integers
+        param board: 2d List of strings
         return: None
         """
         for i in range(9):
